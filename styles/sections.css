@@ -184,7 +184,7 @@ info {
   background: url(../assets/bg/Background_Intro.png) no-repeat center/cover;
   place-items: center;
   padding-block: 128px 200px;
-  
+
   header {
     display: grid;
     text-align: center;
@@ -208,20 +208,37 @@ info {
     gap: 16px;
     span {
       background-color: var(--gray-300);
-      
+
       display: flex;
       align-items: center;
       gap: 12px;
-      
+
       width: 400px;
-      border-radius: 8px ;
+      border-radius: 8px;
       padding: 20px;
 
       h4 {
         color: var(--gray-500);
         width: 288px;
       }
+      span:hover svg {
+        filter: invert(44%) sepia(61%) saturate(578%) hue-rotate(187deg)
+          brightness(100%) contrast(95%); /* Muda a cor usando filter */
+        transition: transform 0.3s ease;
+        fill: var(--main-blue);
+        transform: scale(1.1); /* Exemplo de animação */
+      }
     }
-    
+    span:hover {
+      border: 2px solid var(--main-blue);
+
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    span:hover img {
+      filter: invert(44%) sepia(61%) saturate(578%) hue-rotate(187deg)
+        brightness(100%) contrast(95%);
+      transition: filter 0.3s ease;
+    }
   }
 }
