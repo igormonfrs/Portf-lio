@@ -38,8 +38,6 @@
 
 body {
   background: var(--Base-gray-200, #16181d);
-  
-  
 }
 
 .container {
@@ -47,3 +45,5 @@ body {
   padding-inline: 32px;
   margin-inline: auto;
 }
+
+
