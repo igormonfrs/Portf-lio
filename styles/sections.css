@@ -27,13 +27,13 @@ info {
     }
 
     h1 {
-      color: var(--Base-gray-600, #e2e4e9);
+      color: var(--gray-600, #e2e4e9);
       font: --title-lg;
       padding-block: 8px 20px;
     }
 
     h2 {
-      color: var(--Base-gray-500, #c0c4ce);
+      color: var(--gray-500, #c0c4ce);
       font: var(--subtitle);
       span {
         color: var(--main-blue, #e3646e);
@@ -41,7 +41,7 @@ info {
     }
 
     p {
-      color: var(--Base-gray-400, #878ea1);
+      color: var(--gray-400, #878ea1);
       font: --text-sm;
       width: 680;
     }
@@ -67,7 +67,7 @@ info {
         width: 24px;
       }
       strong {
-        color: var(--Base-gray-500, #c0c4ce);
+        color: var(--gray-500, #c0c4ce);
         font: var(--text-sm);
       }
     }
@@ -77,6 +77,7 @@ info {
 #projects {
   padding-block: 72px 144px;
   place-items: center;
+
   .work {
     text-align: center;
     color: var(--main-blue, #e3646e);
@@ -86,7 +87,7 @@ info {
   .produts {
     padding-block: 8px 56px;
     text-align: center;
-    color: var(--Base-gray-600, #e2e4e9);
+    color: var(--gray-600, #e2e4e9);
     font: var(--title-md);
   }
 
@@ -98,7 +99,6 @@ info {
     width: 1040px;
     gap: 24px;
     figure {
-      
       padding: 12px;
 
       width: 100%;
@@ -106,20 +106,18 @@ info {
       background: var(--gray-300, #292c34);
       border-radius: 12px;
 
-      &:hover  {
+      &:hover {
         border: 2px solid var(--gray-400);
-
       }
 
       a {
-        
-        color: var(--Base-gray-600, #e2e4e9);
+        color: var(--gray-600, #e2e4e9);
         font: var(--title-sm);
       }
 
       h3 {
         padding-block: 8px 0px;
-        color: var(--Base-gray-500, #c0c4ce);
+        color: var(--gray-500, #c0c4ce);
         font: var(--text-sm);
       }
     }
@@ -128,6 +126,55 @@ info {
       border-radius: 8px;
       object-fit: cover;
       padding-block: 0px 20px;
+    }
+  }
+}
+
+#services {
+  place-items: center;
+  padding-block: 88px 120px;
+  gap: 88px;
+
+  height: 480;
+
+  background-color: var(--gray-100);
+
+  header {
+    text-align: center;
+
+    h3 {
+      font: var(--subtitle);
+      color: var(--main-blue);
+    }
+
+    h2 {
+      font: var(--title-md);
+      color: var(--gray-600, #e2e4e9);
+    }
+  }
+
+  div {
+    grid-template-columns: repeat(3, 2fr);
+    gap: 24px;
+
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      border: 2px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 20px;
+
+      h2 {
+        color: var(--gray-600, #e2e4e9);
+        font: var(--title-sm);
+      }
+      h3 {
+        color: var(--gray-500);
+        font: var(--text-sm);
+      }
     }
   }
 }
