@@ -4,9 +4,11 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  
 }
 
 :root {
+  
   /* CORES DO PROJETO */
   --main-red: #e3646e;
   --main-purple: #bb72e9;
@@ -17,7 +19,7 @@
   --gray-100: #0d0e11;
   --gray-200: #16181d;
   --gray-300: #292c34;
-  --gray-400: #878ea1;
+  --gray-400: rgb(135, 142, 161);
   --gray-500: #c0c4ce;
   --gray-600: #e2e4e9;
 
@@ -42,11 +44,9 @@ body {
 
 .container {
   max-width: 1360px;
+  width: 100%;
   padding-inline: 32px;
   margin-inline: auto;
 }
 
 
-* a:hover {
-  color: var(--main-blue);
-}
